@@ -1,4 +1,9 @@
 function CourseParser() {
+    /*
+     * If there is an issue with the regular expressions, DO NOT change
+     * them here. Instead modify the source files in /regex and compile
+     * using Make.
+     */
     this.regex = /(.*)\n\s*([A-Z]+ ?-[A-Z0-9]+ ?-[0-9]{3})\s+([A-Z]*)\s+([0-9]\.[0-9]{2})\s+((?:\s*(?:TBA|[MTWRFS]{1,6})\s+(?:[0-9]{4}[AP]M)?-(?:[0-9]{4}[AP]M)?\s*(?:[A-Z\-]{0,8})\s*(?:[0-9]+[A-Z]+|[A-Z]+[0-9]+|[0-9]+)?\s*\n)+)/g;
     this.subCourseRegex = /(TBA|[MTWRFS]+)\s*([0-9]{4}[AP]M)?-([0-9]{4}[AP]M)?\s*([A-Z\-]{0,8})\s*([0-9]*[A-Z]*[0-9]*)?\s*\n/g;
     this.courseList = -1;
