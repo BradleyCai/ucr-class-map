@@ -76,7 +76,14 @@ function Course(quarter, name, nameID, gt, units,
         }
     }
 
-    this.setIndex = function (index) {
+    this.setIndex = function(index) {
         this.index = index;
+    };
+
+    this.equalTo = function(thatCourse) {
+        if (this.nameID === thatCourse.nameID) {
+            return true;
+        }
+        return false;
     };
 }

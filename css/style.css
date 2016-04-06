@@ -194,7 +194,7 @@ nav>ul>li:last-child:after {
 section {
     margin-bottom: 40px;
 }
-@media only screen and (max-device-width: 320px),
+@media only screen and (max-device-width: 425px),
 only screen and (max-width: 400px) {
     textarea {
         font-size: 18px;
@@ -221,9 +221,12 @@ only screen and (max-width: 400px) {
         font-size: 13px;
         margin: 0 0 0 0;
     }
+    .alert-error {
+        margin: 0 0 25px 0;
+    }
     .btn {
-        width: 100%;
-        margin: 0 0 10px 0;
+        width: 90%;
+        margin: 0 0 25px 0;
     }
     nav {
         padding: 10px 0;
