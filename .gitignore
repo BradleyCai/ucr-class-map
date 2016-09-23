@@ -10,3 +10,5 @@ __pycache__
 client_id.json
 js/.tern-project
 
+# Google Calendar secrets
+resources/config.ini
