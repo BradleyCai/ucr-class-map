@@ -1,4 +1,4 @@
-var file = "/ucr-schedule-visualizer/etc/building_names.txt";
+var file = "etc/building_names.txt";
 
 var buildingNames = {};
 
