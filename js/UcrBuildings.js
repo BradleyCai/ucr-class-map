@@ -23,3 +23,8 @@ getBuildingLocation = function (bldg, room) {
 
     return "<a target=\"_blank\" href=\"" + url + "\">" + name + " " + room + "</a>";
 };
+
+getBuildingDesc = function(bldg) {
+  var name = buildingNames[bldg];
+  return name;
+}
