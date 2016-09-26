@@ -12,3 +12,4 @@ js/.tern-project
 
 # Google Calendar secrets
 resources/config.ini
+resources/api.json
