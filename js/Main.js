@@ -62,4 +62,4 @@ input.onkeyup = function () {
     }
 };
 
-//$(".centered").append("<button class = 'btn' id = 'cal'>Export to Google Calender</button>");
+$('.centered').append('<button class="btn" id="cal" onclick="checkGAuth()">Add to Google Calender</button>');
