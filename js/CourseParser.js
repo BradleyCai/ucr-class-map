@@ -20,6 +20,8 @@ function CourseParser() {
         if (quarter !== null) {
             year = parseInt(/[0-9]{4}/g.exec(rawString)[0]);
             quarter = /Fall|Winter|Spring|Summer/g.exec(quarter)[0];
+            getQuarterDates(quarter,year);
+            getClientID();
         }
         else {
             quarter = "";

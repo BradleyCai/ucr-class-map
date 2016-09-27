@@ -66,5 +66,29 @@
                 </ul>
             </nav>
         </div>
+        <!-- G-Cal Auth Modal -->
+        <div id="g-auth-modal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Oops!</h4>
+              </div>
+              <div class="modal-body">
+                <p>You will need to grant this app the appropraite permissions 
+                to your calendar first. <strong>Click the button below to authorize this 
+                  app.</strong></p>
+                <div class="g-btn-container">
+                  <input type="image" src="img/btn_google_signin_dark_normal_web@2x.png" class="g-btn" alt="google-sign-in" onclick="handleAuthClick(event)">
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default modal-button" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
     </body>
 </html>
