@@ -61,8 +61,3 @@ input.onkeyup = function () {
         $('#unrecognized').remove();
     }
 };
-
-$('.centered').append('<button class="btn" id="cal" onclick="checkGAuth()">Add to Google Calender</button>');
-$('#cal').click(function() {
-  addToGCal(courseList);
-})

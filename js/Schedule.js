@@ -295,6 +295,7 @@ function Schedule(rawSchedule, courseList, expirationDate) {
     this.injectButtons = function(canvas) {
         $(".centered").append("<button class = 'btn' id = 'imageDL'>Download as Image</button>");
         $(".centered").append("<button class = 'btn' id = 'reload'>Visualize Again</button>");
+        $('.centered').append('<button class="btn" id="cal" onclick="addToGCal()">Add to Google Calender</button>');
 
         $("#reload").click(function() {
             made = false;

@@ -67,7 +67,8 @@ function getRoomInfo(data) {
     return getBuildingDesc(data.bldg) + ' ' + data.room;
 }
 
-function addToGCal(data) {
+function addToGCal() {
+  var data = schedule.getCourseList();
   data = fixZeroTimes(data);
   var i = 0;
   for (; i < data.length; i++) {
