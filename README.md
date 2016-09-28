@@ -14,7 +14,7 @@ Calendar" option, should you choose to use it.<sup><a name="g-cal-disclaim">1</a
 button and authorizing this application to access your calendar, your course
 information will be sent to Google using their official APIs in order to add
 your courses to your calendar for the given quarter. This app will only create
-new events for the course schedule you provide. Your calendar is not otherwise
+new events for the course schedule you provide. Your calendar is otherwise
 not read/written to in any way.</sub>
 [GitHub Pages](https://bradleycai.github.io/ucr-schedule-visualizer/)
 --------------------------------------------------------
