@@ -53,7 +53,6 @@
                 <a name="upcoming"></a>
                 <h1>Upcoming features</h1>
                 <ul>
-                    <li>Google Calender Integration</li>
                     <li>Ability to manually add a course</li>
                     <li>Better phone support</li>
                     <li>Prettier calender design + general design improvements</li>
@@ -72,7 +71,31 @@
 
                 <br><br>We also collect statistics about who visits our page. The <a href="https://waa.ai/">Akari Link Shortener</a> records the clicks for our <a href= "https://waa.ai/ucrsv">shortened link</a>. The click count can be found <a href="https://stats.waa.ai/ucrsv">here</a>. Also, GitHub collects statistics about our general traffic and that can be found <a href="https://github.com/BradleyCai/ucr-schedule-visualizer/graphs/traffic">here</a>.
 
-                <br><br>If we ever change this privacy policy we will announce it on the alert section on the main page. <br><strong>(Last updated: May 2, 2016)</strong></p>
+                <br><br>Google Calendar integration requires an internet connection 
+                in order to send your schedule to Google so that the courses may 
+                be added to your calendar as events. For this, Google requires 
+                app developers to register for an API key with them and users to 
+                authorize the app that corresponds to that API key in order to 
+                grant privileges to modify the user's calendar. The API key for 
+                this app is registered to <a href="https://github.com/jgome043">
+                  Joel Gomez</a> and is only authorized for requests from specific 
+                domains.
+
+                <br><br>If you'd like to get your own API key so that you may run 
+                this application on your own server, instructions are available 
+                <a href="https://developers.google.com/google-apps/calendar/quickstart/js#step_1_turn_on_the_api_name">
+                  here</a>. Simply replace the key in the resources/api.key file 
+                with your own, make sure the domain for your project is registered 
+                to your key, and you're set.
+
+                <br><br>This app will also make a separate API request to 
+                https://ucr-term-dates.appspot.com in order to get the start and 
+                end times for every quarter so that the dates for the Google Calendar 
+                events are reflective of the quarter's first and last day of 
+                instruction for your convenience. This API is also open source 
+                and the project can be found <a href="https://github.com/jgome043/ucr-term-dates">here</a>.
+                
+                <br><br>If we ever change this privacy policy we will announce it on the alert section on the main page. <br><strong>(Last updated: September 27, 2016)</strong></p>
             </section>
         </div>
     </body>

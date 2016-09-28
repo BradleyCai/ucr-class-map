@@ -7,8 +7,15 @@ This project is a website written in HTML, CSS, and JavaScript that generates an
 hour by hour view of your schedule as well as provide links to each class location
 from the schedule you get from GROWL. Your security and privacy is maintained because
 all of the schedule interpreting and viewing is done client side. No personal schedule
-related information is sent over the web.
+related information is sent over the web with the exception of the "Add to Google
+Calendar" option, should you choose to use it.<sup><a name="g-cal-disclaim">1</a></sup>.
 
+<sub>[1](g-cal-disclaim).  Only upon clicking the "Add to Google Calendar"
+button and authorizing this application to access your calendar, your course
+information will be sent to Google using their official APIs in order to add
+your courses to your calendar for the given quarter. This app will only create
+new events for the course schedule you provide. Your calendar is not otherwise
+not read/written to in any way.</sub>
 [GitHub Pages](https://bradleycai.github.io/ucr-schedule-visualizer/)
 --------------------------------------------------------
 
