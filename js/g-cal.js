@@ -174,16 +174,16 @@ function loadCalendarApi() {
 function insertEvent() {
   var termDates = acadTerm.pop();
   var numCourses = courses.length;
-  console.log(CLIENT_ID);
+  /* console.log(CLIENT_ID); */
   var coursesAdded = 0;
   /* console.log("insert event..."); */
 // create event
   var REMINDER_MINUTES = 10;
   var Q_DATETIME = 'T000000Z';
   termDates.end += Q_DATETIME;
-  console.log(termDates.start);
-  console.log(termDates.end);
-  console.log(termDates);
+  /* console.log(termDates.start); */
+  /* console.log(termDates.end); */
+  /* console.log(termDates); */
 
   var i;
   for (i = 0; i < numCourses; i++) {
@@ -213,7 +213,7 @@ function insertEvent() {
       /*   ] */
       /* } */
     };
-    console.log(event);
+    /* console.log(event); */
 
     var request = gapi.client.calendar.events.insert({
       'calendarId': 'primary',
