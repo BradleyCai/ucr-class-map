@@ -247,24 +247,12 @@ function Schedule(rawSchedule, courseList, expirationDate) {
         for (var c = 0; c < this.courseList.length; c++) {
             courseAtI = this.courseList[c];
 
-            // build parameter list for addToGoogleCalendar function
-            var params = 'this,' +
-              "'" + courseAtI.quarter + "'," +
-              "'" + courseAtI.year + "'," +
-              "'" + courseAtI.nameID + "'," +
-              "'" + courseAtI.hour1 + ':' + courseAtI.min1 + "'," +
-              "'" + courseAtI.hour2 + ':' + courseAtI.min2 + "'";
-
             if (courseAtI.bldg == "ONLINE" && courseAtI.room == "COURSE") {
                 $('.course' + c).popover({
                     title: courseAtI.name,
                     content: "<strong>Times: </strong>" + courseAtI.times +
                     " <br><strong>GT:</strong> " + courseAtI.gt +
-                    ' <br><strong class="room">Location:</strong> Online Course' +
-                    ' <br><br><a href="#" onclick="addToGoogleCalendar(' +
-                    params +
-                    ')">' +
-                    'Add to Google Calendar</a>',
+                    " <br><strong>Location:</strong> Online Course",
                     html: true,
                     animation: true,
                     trigger: "click"
@@ -279,11 +267,7 @@ function Schedule(rawSchedule, courseList, expirationDate) {
                     " <br><strong>Building:</strong> " + courseAtI.bldg +
                     " <br><strong>Room:</strong> " + courseAtI.room +
                     " <br><strong>GT:</strong> " + courseAtI.gt +
-                    ' <br><strong class="room">Location:</strong> ' + location +
-                    ' <br><br><a href="#" onclick="addToGoogleCalendar(' +
-                    params +
-                    ')">' +
-                    'Add to Google Calendar</a>',
+                    " <br><strong>Location:</strong> " + location,
                     html: true,
                     animation: true,
                     trigger: "click"
